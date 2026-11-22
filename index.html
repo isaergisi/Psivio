@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="tr" data-type="service" data-radius="soft" data-buttons="pill" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Başlık ve açıklama site.config.js'ten doldurulur. Sosyal medya önizlemesi (WhatsApp, Instagram vb.)
+       JavaScript çalıştırmadığı için og: satırlarını her danışan için burada da güncelle. -->
+  <title>Psikolojik Danışmanlık</title>
+  <meta name="description" content="Yetişkinler için psikolojik danışmanlık: online ya da yüz yüze birebir seanslar. Randevunu sitedeki formdan oluştur.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#0D1316">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Psikolojik Danışmanlık">
+  <meta property="og:description" content="Online ya da yüz yüze birebir psikolojik danışmanlık seansları. Randevunu sitedeki formdan oluştur.">
+  <meta property="og:image" content="img/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="site.config.js"></script>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<noscript><p style="padding:24px;font-family:sans-serif">Bu sitenin içeriği için JavaScript'in açık olması gerekiyor.</p></noscript>
+
+<div class="intro" aria-hidden="true">
+  <div class="intro__mark"><span data-k="kisi.simge"></span></div>
+  <div class="intro__name"><span data-k="kisi.adSoyad"></span></div>
+</div>
+
+<header class="nav" data-nav>
+  <div class="wrap nav__in">
+    <a class="brand" href="#ust" data-brand>
+      <span class="brand__mark" aria-hidden="true" data-k="kisi.simge"></span>
+      <span class="brand__name" data-k="kisi.adSoyad"></span>
+    </a>
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#surec">Süreç</a>
+      <a href="#yazilar">Yazılar</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <a class="btn btn--primary btn--sm nav__cta" href="#randevu">Randevu oluştur</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+      <span class="nav__toggle-label">Menü</span>
+      <span class="nav__burger" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="wrap menu__in" aria-label="Mobil menü">
+    <a href="#hakkimda" style="--i:0">Hakkımda</a>
+    <a href="#hizmetler" style="--i:1">Hizmetler</a>
+    <a href="#surec" style="--i:2">Süreç</a>
+    <a href="#yazilar" style="--i:3">Yazılar</a>
+    <a href="#randevu" style="--i:4">Randevu</a>
+    <a href="#iletisim" style="--i:5">İletişim</a>
+    <p class="menu__foot" style="--i:6"><a data-mail></a></p>
+  </nav>
+</div>
+
+<main id="icerik">
+
+  <!-- 1 · HERO -->
+  <section class="hero" id="ust" data-enter style="--h:1">
+    <div class="hero__media" aria-hidden="true">
+      <img data-src="hero.gorsel" alt="" width="2400" height="1500" fetchpriority="high">
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="letterbox letterbox--top" aria-hidden="true"></div>
+    <div class="letterbox letterbox--bottom" aria-hidden="true"></div>
+    <div class="wrap hero__in">
+      <p class="eyebrow hero__eyebrow"><span class="dot" aria-hidden="true"></span><span data-k="hero.ust"></span></p>
+      <h1 class="hero__title" data-hero-title></h1>
+      <div class="hero__foot">
+        <p class="hero__lead" data-k="hero.metin"></p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#randevu">Randevu oluştur <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost-light" href="#hizmetler">Hizmetleri incele</a>
+        </div>
+      </div>
+      <ul class="hero__meta" aria-label="Kısaca">
+        <li><span data-k="kisi.simge"></span> <span data-k="kisi.slogan"></span></li>
+        <li data-k="kisi.rozet"></li>
+      </ul>
+    </div>
+    <a class="scrollcue" href="#hakkimda" aria-label="Aşağı kaydır"><span></span></a>
+  </section>
+
+  <!-- 2 · HAKKIMDA -->
+  <section class="about" id="hakkimda" style="--h:1">
+    <div class="wrap about__grid">
+      <div class="about__text">
+        <h2 class="h2" data-k="hakkimda.baslik"></h2>
+        <p class="lead" data-k="hakkimda.giris"></p>
+        <p data-k="hakkimda.metin"></p>
+        <dl class="facts" data-facts></dl>
+        <a class="link" href="#randevu"><span data-k="hakkimda.baglanti"></span> <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="about__photo frame" data-reveal>
+        <img data-src="hakkimda.gorsel" data-alt="hakkimda.gorselAlt" alt="" width="1400" height="1600" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3 · HİZMETLER -->
+  <section class="services" id="hizmetler" style="--h:2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" data-k="hizmetler.baslik"></h2>
+        <p class="section-head__aside" data-k="hizmetler.aciklama"></p>
+      </div>
+      <div class="cards" data-services></div>
+    </div>
+  </section>
+
+  <!-- 4 · SÜREÇ — sabitlenen bölümler, fotoğraflar perde gibi değişir -->
+  <section class="process" id="surec" data-chapters style="--h:3">
+    <div class="process__sticky">
+      <div class="wrap process__grid">
+        <div class="process__text">
+          <h2 class="h2" data-k="surec.baslik"></h2>
+          <ol class="chapters" data-steps></ol>
+          <div class="progress" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="process__media" aria-hidden="true" data-step-media></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · ALINTI — kelimeler kaydırdıkça aydınlanır -->
+  <section class="quote" id="alinti" data-words style="--h:2" aria-labelledby="alinti-baslik">
+    <div class="quote__sticky">
+      <div class="quote__bg" aria-hidden="true"><img data-src="alinti.gorsel" alt="" width="2400" height="1500" loading="lazy" decoding="async"></div>
+      <div class="wrap quote__in">
+        <h2 class="eyebrow eyebrow--light" id="alinti-baslik" data-k="alinti.ust"></h2>
+        <blockquote>
+          <p class="quote__text" data-split></p>
+          <footer data-k="alinti.sahibi"></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · YAZILAR -->
+  <section class="writing" id="yazilar" style="--h:2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" data-k="yazilar.baslik"></h2>
+        <p class="section-head__aside" data-k="yazilar.aciklama"></p>
+      </div>
+      <div class="writing__grid" data-writing>
+        <div class="notes" data-notes></div>
+      </div>
+      <ul class="articles" data-articles hidden></ul>
+      <a class="link writing__ig" data-ig-follow hidden target="_blank" rel="noopener"></a>
+    </div>
+  </section>
+
+  <!-- 7 · RANDEVU -->
+  <section class="booking" id="randevu" style="--h:2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="h2" data-k="randevu.baslik"></h2>
+        <p class="section-head__aside" data-k="randevu.aciklama"></p>
+      </div>
+
+      <div class="booking__grid">
+        <form class="bform" id="bform" data-booking novalidate>
+          <fieldset class="bstep">
+            <legend><span class="bstep__no">1</span> Konu</legend>
+            <div class="chips" data-topics></div>
+          </fieldset>
+
+          <fieldset class="bstep">
+            <legend><span class="bstep__no">2</span> Görüşme şekli</legend>
+            <div class="chips" data-formats></div>
+          </fieldset>
+
+          <fieldset class="bstep">
+            <legend><span class="bstep__no">3</span> Gün</legend>
+            <div class="days" data-days></div>
+            <p class="ferr" data-err="gun" hidden>Bir gün seç.</p>
+          </fieldset>
+
+          <fieldset class="bstep">
+            <legend><span class="bstep__no">4</span> Saat</legend>
+            <div class="times" data-times></div>
+            <p class="ferr" data-err="saat" hidden>Bir saat seç.</p>
+          </fieldset>
+
+          <fieldset class="bstep">
+            <legend><span class="bstep__no">5</span> Bilgilerin</legend>
+            <div class="fields">
+              <div class="field">
+                <label for="ad">Ad soyad</label>
+                <input id="ad" name="ad" type="text" autocomplete="name" required>
+                <p class="ferr" data-err="ad" hidden>Adını ve soyadını yaz.</p>
+              </div>
+              <div class="field">
+                <label for="eposta">E-posta</label>
+                <input id="eposta" name="eposta" type="email" autocomplete="email" inputmode="email" required>
+                <p class="ferr" data-err="eposta" hidden>Geçerli bir e-posta adresi yaz.</p>
+              </div>
+              <div class="field">
+                <label for="telefon">Telefon <span class="opt">(isteğe bağlı)</span></label>
+                <input id="telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+              <div class="field field--wide">
+                <label for="not">Kısaca neden geldiğin <span class="opt">(isteğe bağlı)</span></label>
+                <textarea id="not" name="not" rows="3"></textarea>
+              </div>
+              <div class="field field--wide">
+                <label class="check"><input type="checkbox" name="onay" required><span data-k="randevu.onayMetni"></span></label>
+                <p class="ferr" data-err="onay" hidden>Devam etmek için onay kutusunu işaretle.</p>
+              </div>
+            </div>
+          </fieldset>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        </form>
+
+        <aside class="summary" aria-live="polite">
+          <figure class="summary__img frame"><img data-src="randevu.gorsel" alt="" width="1400" height="1700" loading="lazy" decoding="async"></figure>
+          <div class="summary__body" data-summary>
+            <h3>Randevu özeti</h3>
+            <dl>
+              <div><dt>Konu</dt><dd data-s="konu"></dd></div>
+              <div><dt>Şekil</dt><dd data-s="sekil"></dd></div>
+              <div><dt>Gün</dt><dd data-s="gun">Seçilmedi</dd></div>
+              <div><dt>Saat</dt><dd data-s="saat">Seçilmedi</dd></div>
+            </dl>
+            <button class="btn btn--primary btn--block" type="submit" form="bform" data-submit>Randevu talebini gönder <span class="btn__arrow" aria-hidden="true">→</span></button>
+            <p class="summary__fine" data-status>Talebin onaylanana kadar kesin randevu sayılmaz.</p>
+          </div>
+          <div class="summary__done" data-done hidden tabindex="-1">
+            <span class="done__mark" aria-hidden="true">✓</span>
+            <h3>Talebin ulaştı</h3>
+            <p data-done-text></p>
+            <div class="done__actions">
+              <button class="btn btn--primary btn--sm" type="button" data-ics>Takvime ekle</button>
+              <button class="btn btn--ghost btn--sm" type="button" data-again>Yeni talep oluştur</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · SSS -->
+  <section class="faq" id="sss" style="--h:1">
+    <div class="wrap faq__grid">
+      <div>
+        <h2 class="h2" data-k="sss.baslik"></h2>
+        <p class="muted" data-k="sss.aciklama"></p>
+        <a class="link" data-mail-link>E-posta gönder <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="faq__list" data-faq></div>
+    </div>
+  </section>
+
+  <!-- 9 · İLETİŞİM / KAPANIŞ -->
+  <section class="close" id="iletisim" style="--h:1">
+    <div class="close__bg" aria-hidden="true"><img data-src="kapanis.gorsel" alt="" width="2400" height="1500" loading="lazy" decoding="async"></div>
+    <div class="wrap close__in">
+      <h2 class="close__title" data-k="kapanis.baslik"></h2>
+      <a class="close__mail" data-mail></a>
+      <ul class="close__links" data-close-links></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a class="brand brand--light" href="#ust"><span class="brand__mark" aria-hidden="true" data-k="kisi.simge"></span><span class="brand__name" data-k="kisi.adSoyad"></span></a>
+    <nav class="footer__nav" aria-label="Alt menü">
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#yazilar">Yazılar</a>
+      <a href="#randevu">Randevu</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <p class="footer__sos" data-k="altBilgi.acil"></p>
+    <p class="footer__fine">© <span data-year></span> <span data-k="kisi.adSoyad"></span> · <span data-k="altBilgi.kredi"></span></p>
+  </div>
+</footer>
+
+<div class="mbar" data-mbar>
+  <a class="btn btn--primary btn--block" href="#randevu">Randevu oluştur</a>
+</div>
+
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
